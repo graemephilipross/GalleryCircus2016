@@ -649,12 +649,19 @@
 			}
 
 			&.one {
-				background-color: #81918E;
-				background-image: url('../../images/banner.jpg');
+				background-color: #fff;
+				background-image: url('../../images/BackLargerMenu.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top left;
 			}
 
 			&.two {
 				background-color: #f5fafa;
+                background-image: url('../../images/tableTop.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+
 			}
 
 			&.three {
