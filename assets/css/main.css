@@ -1284,8 +1284,10 @@ button,
   left: 0;
   width: 375px;
   height: 100%;
-  color: #fff;
-  background: #222629 url("images/overlay.png");
+  color: #7c2322;
+  background-image: url("../../images/motelSign.png"), url("images/overlay.png"), url("../../images/menubg.png");
+  background-repeat: no-repeat, repeat, repeat;
+  background-position: bottom center, left, left;
   box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
   text-align: right; }
   #header .top {
@@ -1300,39 +1302,22 @@ button,
     width: 100%; }
   #header .icons {
     font-size: 0.8em;
-    margin: 0 0 1em 0;
+    margin-bottom: 0em;
     text-align: center; }
     #header .icons a {
-      color: #41484c;
+      color: #7c2322;
       -moz-transition: color 0.35s ease-in-out;
       -webkit-transition: color 0.35s ease-in-out;
       -ms-transition: color 0.35s ease-in-out;
       transition: color 0.35s ease-in-out; }
       #header .icons a:hover {
-        color: #fff; }
+        color: #f2b749; }
 
 #logo {
-  position: relative;
-  margin: 1.75em 1.5em 1.5em 1.5em;
-  min-height: 48px;
-  cursor: default; }
-  #logo h1 {
-    position: relative;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 1em; }
-  #logo p {
-    position: relative;
-    display: block;
-    font-size: 0.6em;
-    color: rgba(255, 255, 255, 0.5);
-    line-height: 1.25em;
-    margin: 0.5em 0 0 0; }
-  #logo .image {
-    position: absolute;
-    left: 0;
-    top: 0; }
+  text-align: center; }
+  #logo img {
+    width: 100%;
+    max-width: 230px; }
 
 #nav ul li a {
   display: block;
@@ -1467,9 +1452,9 @@ button,
   /* Header */
   #header {
     width: 20%; }
-  #logo .image {
-    position: relative;
-    margin: 0 0 0.5em 0; }
+  #logo img {
+    text-align: center;
+    width: 100%; }
   #nav ul li a {
     font-size: 0.8em;
     padding-top: 0.5em;
@@ -1531,7 +1516,9 @@ button,
     width: 275px;
     z-index: 10002;
     width: 275px;
-    background: #222729 url("images/overlay.png");
+    background-image: url("images/overlay.png"), url("../../images/menubg.png");
+    background-repeat: repeat, repeat;
+    background-position: left, left;
     box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125); }
     #header .top {
       position: relative; }
@@ -1541,8 +1528,6 @@ button,
       padding-top: 2em;
       margin-top: 1em;
       position: relative; }
-  #logo {
-    margin: 1.5em 1.25em 1.25em 1.25em; }
   #nav ul li a {
     padding: 0.5em 1.25em 0.5em 1.25em; }
   #headerToggle {
