@@ -1285,7 +1285,7 @@ button,
   width: 375px;
   height: 100%;
   color: #7c2322;
-  background-image: url("../../images/motelSign.png"), url("images/overlay.png"), url("../../images/menubg.png");
+  background-image: url("../../images/motelSign.png"), url("images/overlay.png"), url("../../images/menubgRed.png");
   background-repeat: no-repeat, repeat, repeat;
   background-position: bottom center, left, left;
   box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
@@ -1315,7 +1315,7 @@ button,
 
 #logo {
   text-align: center; }
-  #logo img {
+  #logo img, #logo svg {
     width: 100%;
     max-width: 230px; }
 
@@ -1452,7 +1452,7 @@ button,
   /* Header */
   #header {
     width: 20%; }
-  #logo img {
+  #logo img, #logo svg {
     text-align: center;
     width: 100%; }
   #nav ul li a {

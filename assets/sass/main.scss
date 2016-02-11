@@ -472,7 +472,7 @@
 		height: 100%;
 		color: #7c2322;
 
-        background-image: url('../../images/motelSign.png'), url('images/overlay.png'), url('../../images/menubg.png');
+        background-image: url('../../images/motelSign.png'), url('images/overlay.png'), url('../../images/menubgRed.png');
         background-repeat: no-repeat, repeat, repeat;
         background-position: bottom center, left, left;
 
@@ -513,7 +513,7 @@
 
       text-align: center;
 
-      img {
+      img, svg {
 
         width:100%;
         max-width: 230px;
@@ -749,7 +749,7 @@
 
 			#logo {
 
-              img {
+              img, svg {
                 text-align: center;
                 width:100%;
               }

@@ -117,3 +117,54 @@
 	});
 
 })(jQuery);
+
+(function($) {
+
+	// animations greensock
+
+	var logoAnimation = new TimelineMax({onComplete: animateFlash});
+	logoAnimation.set("#logoSVG", {stroke:"#fff"});
+    logoAnimation.add(animateGalleryCircus(), "animateGalleryCircus");
+	logoAnimation.add(animateTail(), "animateTail");
+
+    function animateGalleryCircus() {
+        var gallery = new TimelineMax();
+
+		gallery.fromTo(".path1", 1 , {drawSVG:"0% 0%"}, {drawSVG:"90% 100%"}, "0");
+		gallery.to(".path1", 2 , {fillOpacity: "1"}, "-=1");
+
+		gallery.fromTo(".path2", 1, {drawSVG:"0% 0%"}, {drawSVG:"90% 100%"}, "0");
+		gallery.to(".path2", 2 , {fillOpacity: "1"}, "-=2");
+
+		gallery.fromTo(".path3", 1 , {drawSVG:"0% 0%"}, {drawSVG:"90% 100%"}, "1");
+		gallery.to(".path3", 2 , {fillOpacity: "1"}, "-=1");
+
+		gallery.fromTo(".path4", 1, {drawSVG:"0% 0%"}, {drawSVG:"99% 100%"}, "1");
+		gallery.to(".path4", 2 , {fillOpacity: "1"}, "-=2");
+
+		gallery.fromTo(".path5", 1 , {drawSVG:"0% 0%"}, {drawSVG:"90% 100%"}, "1");
+		gallery.to(".path5", 2 , {fillOpacity: "1"}, "-=2");
+
+        return gallery;
+    }
+
+	function animateTail() {
+		var tail = new TimelineMax();
+
+		tail.fromTo(".path6", 0.5 , {drawSVG:"0% 0%"}, {drawSVG:"90% 100%"}, "0");
+		tail.to(".path6", 1 , {fillOpacity: "1"}, "-=0.5");
+
+		tail.fromTo(".path7", 0.5, {drawSVG:"0% 0%"}, {drawSVG:"90% 100%"}, "0.5");
+		tail.to(".path7", 1 , {fillOpacity: "1"}, "-=0.5");
+
+		tail.fromTo(".path8", 0.5 , {drawSVG:"0% 0%"}, {drawSVG:"90% 100%"}, "1");
+		tail.to(".path8", 1 , {fillOpacity: "1"}, "-=0.5");
+		return tail;
+	}
+
+    function animateFlash() {
+        var flash = new TimelineMax({yoyo:true, repeat:-1});
+        flash.to(".logoSVG", 2 , {drawSVG: "50% 50%", stroke:"#fff", delay:5});
+    }
+
+})(jQuery)
