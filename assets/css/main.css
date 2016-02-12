@@ -1291,22 +1291,7 @@ button,
   background-repeat: no-repeat, repeat;
   background-position: bottom center, left;
   box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
-  text-align: right;
-  border: 0.25em solid #681a19;
-  box-sizing: border-box; }
-  #header:before {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    top: 0.2em;
-    left: 0.2em;
-    right: 0.2em;
-    bottom: 0.2em;
-    border: 0.2em solid #a32e2c;
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    opacity: 0.1; }
+  text-align: right; }
   #header .top {
     position: absolute;
     left: 0;
