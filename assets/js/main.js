@@ -122,10 +122,20 @@
 
 	// animations greensock
 
-	var logoAnimation = new TimelineMax({onComplete: animateFlash});
-	logoAnimation.set("#logoSVG", {stroke:"#fff"});
-    logoAnimation.add(animateGalleryCircus(), "animateGalleryCircus");
-	logoAnimation.add(animateTail(), "animateTail");
+	$(document).ready(function() {
+		initAnimation()
+	});
+
+	function initAnimation() {
+		var logoAnimation = new TimelineMax({onComplete: animateFlash});
+		logoAnimation.set("#logoSVG", {stroke:"#fff"});
+		logoAnimation.add(animateGalleryCircus(), "animateGalleryCircus");
+		logoAnimation.add(animateTail(), "animateTail");
+
+		var hotdog = new TimelineMax();
+		hotdog.fromTo([".hd2", ".hd3", ".hd4"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", fillOpacity:1}, "0.5");
+		hotdog.fromTo([".hd1"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:10}, "1.5");
+	}
 
     function animateGalleryCircus() {
         var gallery = new TimelineMax();
