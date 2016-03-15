@@ -1,6 +1,7 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:700,400");
 /*
 	Prologue by HTML5 UP
 	html5up.net | @n33co
@@ -1324,7 +1325,9 @@ button,
     max-width: 230px; }
 
 #nav ul li a {
-  font-family: 'Pacifico', cursive;
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: 'Glegoo', serif;
+  font-weight: 700;
   font-size: 1.5em;
   display: block;
   padding: 0.5em 1.5em 0.5em 1.5em;
@@ -1434,7 +1437,12 @@ button,
     margin-left: 300px; }
   /* Main */
   #main {
-    margin-left: 300px; } }
+    margin-left: 300px; }
+  /* svg icons */
+  .iconSVG {
+    width: 50px;
+    height: 50px;
+    margin-top: -0.3em; } }
 
 /* Normal */
 @media screen and (min-width: 961px) and (max-width: 1620px) {
@@ -1442,7 +1450,12 @@ button,
   #main > section {
     padding: 3em 0; }
   #main section.cover {
-    padding: 5em 0; } }
+    padding: 5em 0; }
+  /* svg icons */
+  .iconSVG {
+    width: 50px;
+    height: 50px;
+    margin-top: -0.3em; } }
 
 /* Narrow */
 @media screen and (min-width: 961px) and (max-width: 1320px) {
@@ -1478,7 +1491,12 @@ button,
     margin-left: 20%; }
   /* Main */
   #main {
-    margin-left: 20%; } }
+    margin-left: 20%; }
+  /* svg icons */
+  .iconSVG {
+    width: 40px;
+    height: 40px;
+    margin-top: -0.3em; } }
 
 /* Narrower */
 #headerToggle {
@@ -1617,7 +1635,12 @@ button,
     #main > section {
       padding: 3em 0; }
     #main section.cover {
-      padding: 4em 0; } }
+      padding: 4em 0; }
+  /* svg icons */
+  .iconSVG {
+    width: 50px;
+    height: 50px;
+    margin-top: -0.3em; } }
 
 /* Mobile */
 @media screen and (max-width: 736px) {
@@ -1649,4 +1672,9 @@ button,
     padding: 0;
     margin: 1em 0 0 0; }
     #footer .copyright li:first-child {
-      margin-top: 0; } }
+      margin-top: 0; }
+  /* svg icons */
+  .iconSVG {
+    width: 50px;
+    height: 50px;
+    margin-top: -0.3em; } }

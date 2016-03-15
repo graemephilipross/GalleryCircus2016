@@ -133,14 +133,46 @@
 		logoAnimation.add(animateTail(), "animateTail");
 
 		var hotdog = new TimelineMax({onComplete: animateHotDog});
-		hotdog.fromTo([".hd2", ".hd3", ".hd4"], 2 , {drawSVG:"0%"}, {drawSVG:"100%", fillOpacity:1}, "0");
-		hotdog.fromTo([".hd1"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:10}, "1.5");
+		hotdog.to([".hd2", ".hd3", ".hd4"], 0.5 , {fillOpacity:1}, "0");
+		hotdog.fromTo([".hd1"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:10}, "+=0.5");
+
+		var drink = new TimelineMax({onComplete: animateDrink});
+		drink.to([".d2"], 0.5 , {fillOpacity:1}, "0");
+		drink.fromTo([".d1", ".d3"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#627f95", fillOpacity:1, strokeWidth:10}, "+=1");
+
+		var sauce = new TimelineMax({onComplete: animateSauce});
+		sauce.to([".s1", ".s3"], 0.5 , {fillOpacity:1}, "0");
+		sauce.fromTo([".s4"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:3}, "+=2");
+		sauce.fromTo([".s2"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#6c1a18", fillOpacity:1, strokeWidth:3});
+
+		var icecream = new TimelineMax({onComplete: animateIceCream});
+		icecream.to([".ic4"], 0.5 , {fillOpacity:1}, "0");
+		icecream.staggerFromTo([".ic1", ".ic2", ".ic3"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#627f95", fillOpacity:1, strokeWidth:10}, 0.3, "+=2.5");
 	}
 
 	function animateHotDog() {
 		var hotdog = new TimelineMax({repeat:-1});
-		hotdog.to([".hd1"], 1 , {delay: 2, drawSVG:"0%", fillOpacity:0, strokeWidth:0});
-		hotdog.to([".hd1"], 1 , {delay: 2, drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:10});
+		hotdog.to([".hd1"], 1 , {delay: 1, drawSVG:"0%", fillOpacity:0, strokeWidth:0});
+		hotdog.to([".hd1"], 1 , {delay: 1, drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:10});
+	}
+
+	function animateDrink() {
+		var drink = new TimelineMax({repeat:-1});
+		drink.to([".d1", ".d3"], 1 , {delay: 1, drawSVG:"0%", fillOpacity:0, strokeWidth:0});
+		drink.to([".d1", ".d3"], 1 , {delay: 1, drawSVG:"100%", stroke:"#627f95", fillOpacity:1, strokeWidth:10});
+	}
+
+	function animateSauce() {
+		var sauce = new TimelineMax({repeat:-1});
+		sauce.to([".s4", ".s2"], 1 , {delay: 1, drawSVG:"0%", fillOpacity:0, strokeWidth:0});
+		sauce.to([".s4"], 1 , {delay: 1, drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:3});
+		sauce.to([".s2"], 1 , {delay: 1, drawSVG:"100%", stroke:"#6c1a18", fillOpacity:1, strokeWidth:3});
+	}
+
+	function animateIceCream() {
+		var icecream = new TimelineMax({repeat:-1});
+		icecream.staggerTo([".ic1", ".ic2", ".ic3"], 1 , {delay: 1, drawSVG:"0%", fillOpacity:0, strokeWidth:0}, 0.1);
+		icecream.staggerTo([".ic1", ".ic2", ".ic3"], 1 , {delay: 1, drawSVG:"100%", stroke:"#627f95", fillOpacity:1, strokeWidth:10}, 0.1);
 	}
 
     function animateGalleryCircus() {

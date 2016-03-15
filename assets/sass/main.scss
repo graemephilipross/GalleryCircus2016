@@ -5,6 +5,7 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url('https://fonts.googleapis.com/css?family=Glegoo:700,400');
 
 /*
 	Prologue by HTML5 UP
@@ -529,7 +530,9 @@
 		ul {
 			li {
 				a {
-					font-family: 'Pacifico', cursive;
+					/*font-family: 'Pacifico', cursive;*/
+					font-family: 'Glegoo', serif;
+					font-weight: 700;
 					font-size: 1.5em;
 					display: block;
 					padding: 0.5em 1.5em 0.5em 1.5em;
@@ -698,6 +701,13 @@
 				margin-left: 300px;
 			}
 
+		/* svg icons */
+			.iconSVG {
+				width: 50px;
+				height:50px;
+				margin-top: -0.3em;
+			}
+
 	}
 
 /* Normal */
@@ -717,6 +727,13 @@
 					}
 				}
 			}
+
+		/* svg icons */
+		.iconSVG {
+			width: 50px;
+			height:50px;
+			margin-top: -0.3em;
+		}
 
 	}
 
@@ -745,6 +762,7 @@
 					}
 				}
 			}
+
 
 		/* Item */
 
@@ -799,6 +817,13 @@
 			#main {
 				margin-left: 20%;
 			}
+
+		/* svg icons */
+		.iconSVG {
+			width: 40px;
+			height:40px;
+			margin-top: -0.3em;
+		}
 
 	}
 
@@ -977,6 +1002,13 @@
 					}
 				}
 			}
+
+		/* svg icons */
+		.iconSVG {
+			width: 50px;
+			height:50px;
+			margin-top: -0.3em;
+		}
 	}
 
 /* Mobile */
@@ -1045,5 +1077,12 @@
 					}
 				}
 			}
+
+		/* svg icons */
+		.iconSVG {
+			width: 50px;
+			height:50px;
+			margin-top: -0.3em;
+		}
 
 	}
