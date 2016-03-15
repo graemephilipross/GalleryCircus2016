@@ -132,9 +132,15 @@
 		logoAnimation.add(animateGalleryCircus(), "animateGalleryCircus");
 		logoAnimation.add(animateTail(), "animateTail");
 
-		var hotdog = new TimelineMax();
-		hotdog.fromTo([".hd2", ".hd3", ".hd4"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", fillOpacity:1}, "0.5");
+		var hotdog = new TimelineMax({onComplete: animateHotDog});
+		hotdog.fromTo([".hd2", ".hd3", ".hd4"], 2 , {drawSVG:"0%"}, {drawSVG:"100%", fillOpacity:1}, "0");
 		hotdog.fromTo([".hd1"], 1 , {drawSVG:"0%"}, {drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:10}, "1.5");
+	}
+
+	function animateHotDog() {
+		var hotdog = new TimelineMax({repeat:-1});
+		hotdog.to([".hd1"], 1 , {delay: 2, drawSVG:"0%", fillOpacity:0, strokeWidth:0});
+		hotdog.to([".hd1"], 1 , {delay: 2, drawSVG:"100%", stroke:"#f1b649", fillOpacity:1, strokeWidth:10});
 	}
 
     function animateGalleryCircus() {
