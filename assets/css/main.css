@@ -1424,6 +1424,11 @@ button,
     #main > section.four {
       background-color: #e8edec; }
 
+.iconSVG {
+  width: 50px;
+  height: 50px;
+  margin-top: -0.3em; }
+
 /* Wide */
 @media screen and (min-width: 961px) and (max-width: 1880px) {
   /* Basic */
