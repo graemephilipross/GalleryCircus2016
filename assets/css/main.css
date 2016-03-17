@@ -1301,7 +1301,7 @@ button,
     top: 0;
     width: 100%; }
     #header .top .sign {
-      background-image: url("../../images/motelSignBig.png");
+      background-image: url("../../images/motelSignReverse.gif");
       background-repeat: no-repeat;
       background-position: bottom center;
       width: 100%;
