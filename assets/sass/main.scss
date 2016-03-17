@@ -663,10 +663,15 @@
 
 			&.one {
 				background-color: #fff;
-				background-image: url('../../images/BackLargerMenu.png');
-                background-repeat: no-repeat;
-                background-size: cover;
+				background-image: url('../../images/menubgDark.png');
+				background-size: 128px 128px;
+                background-repeat: repeat;
                 background-position: top left;
+
+				box-shadow: inset 0 0 0 0.3em #42100f;
+				-webkit-box-shadow: inset 0 0 0 0.3em #42100f;
+				-moz-box-shadow: inset 0 0 0 0.3em #42100f;
+				-o-box-shadow: inset 0 0 0 0.3em #42100f;
 			}
 
 			&.two {
