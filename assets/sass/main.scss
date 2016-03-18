@@ -675,6 +675,14 @@
 				border-image: linear-gradient(to bottom, #42100f 0%, #300605 100%);
 				border-image-slice: 1;
 
+				.videoTitleText {
+					font-family: 'Inconsolata';
+					font-weight: 700;
+					font-size: 1.5em;
+					text-align: center;
+					padding-bottom: 0.3em;
+				}
+
 				.videoContainer {
 					display: flex;
 					flex-direction: row;
