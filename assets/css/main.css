@@ -2,6 +2,7 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 @import url("https://fonts.googleapis.com/css?family=Glegoo:700,400");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 /*
 	Prologue by HTML5 UP
 	html5up.net | @n33co
@@ -1414,7 +1415,7 @@ button,
         #main > section.dark a:hover {
           border-bottom-color: rgba(255, 255, 255, 0); }
     #main > section.cover {
-      padding: 6em 0;
+      padding: 2em 0;
       background-size: cover;
       background-position: center center; }
     #main > section.one {
@@ -1423,15 +1424,24 @@ button,
       background-size: 128px 128px;
       background-repeat: repeat;
       background-position: top left;
-      box-shadow: inset 0 0 0 0.3em #42100f;
-      -webkit-box-shadow: inset 0 0 0 0.3em #42100f;
-      -moz-box-shadow: inset 0 0 0 0.3em #42100f;
-      -o-box-shadow: inset 0 0 0 0.3em #42100f; }
+      border: 1em solid transparent;
+      -moz-border-image: -moz-linear-gradient(top, #42100f 0%, #300605 100%);
+      -webkit-border-image: -webkit-linear-gradient(top, #42100f 0%, #300605 100%);
+      border-image: linear-gradient(to bottom, #42100f 0%, #300605 100%);
+      border-image-slice: 1; }
       #main > section.one .videoContainer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        flex-wrap: nowrap; }
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around; }
+        #main > section.one .videoContainer .videoWrapper .videoText {
+          font-family: 'Inconsolata';
+          font-weight: 700;
+          font-size: 1.5em;
+          text-align: left;
+          padding: 0.3em 0; }
         #main > section.one .videoContainer .videoWrapper iframe {
           width: 560px;
           height: 315px; }
@@ -1476,7 +1486,10 @@ button,
   #main > section {
     padding: 3em 0; }
   #main section.cover {
-    padding: 5em 0; }
+    padding: 2em 0; }
+  #main section .videoWrapper iframe {
+    width: 400px !important;
+    height: 225px !important; }
   /* svg icons */
   .iconSVG {
     width: 50px;
@@ -1660,7 +1673,10 @@ button,
     #main > section {
       padding: 3em 0; }
     #main section.cover {
-      padding: 4em 0; }
+      padding: 1em 0; }
+      #main section.cover .videoWrapper iframe {
+        width: 400px !important;
+        height: 225px !important; }
   /* svg icons */
   .iconSVG {
     width: 50px;
@@ -1691,9 +1707,14 @@ button,
   #main > section {
     padding: 2em 0; }
   #main section.cover {
-    padding: 4em 0em; }
+    padding: 1em 0em; }
     #main section.cover header {
       padding: 0 1em; }
+    #main section.cover .videoWrapper .videoText {
+      font-size: 0.8em; }
+    #main section.cover .videoWrapper iframe {
+      width: 300px !important;
+      height: 169px !important; }
   /* Footer */
   #footer .copyright li {
     display: block;
