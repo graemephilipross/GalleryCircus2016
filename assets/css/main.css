@@ -972,7 +972,7 @@ body {
   background: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19pt;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.75em;
   color: #888; }
   body.is-loading * {
@@ -985,6 +985,9 @@ body {
     -ms-animation: none !important;
     animation: none !important; }
 
+iframe {
+  background-color: rgba(100, 125, 142, 0.6); }
+
 input, textarea, select {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 19pt;
@@ -993,7 +996,7 @@ input, textarea, select {
   color: #888; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 700;
   color: #666;
   line-height: 1.5em; }
 
@@ -1023,7 +1026,7 @@ footer {
   margin: 2em 0 0 0; }
 
 strong, b {
-  font-weight: 300;
+  font-weight: 700;
   color: #666; }
 
 em, i {
@@ -1698,7 +1701,7 @@ button,
   h2 {
     font-size: 1.5em;
     letter-spacing: 0;
-    font-weight: 300; }
+    font-weight: 700; }
   .container {
     padding: 0 15px 0 15px; }
   /* header */
