@@ -970,7 +970,7 @@ body {
 /* Basic */
 body {
   background: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Glegoo', serif;
   font-size: 19pt;
   font-weight: 400;
   line-height: 1.75em;
@@ -986,7 +986,8 @@ body {
     animation: none !important; }
 
 iframe {
-  background-color: rgba(100, 125, 142, 0.6); }
+  /*background-color: rgba(100, 125, 142, 0.6);*/
+  background-color: rgba(255, 255, 255, 0.8); }
 
 input, textarea, select {
   font-family: 'Source Sans Pro', sans-serif;
@@ -1461,9 +1462,17 @@ button,
       background-size: cover;
       background-position: top left; }
     #main > section.three {
-      background-color: #ecf1f1; }
+      /*background-color: #ecf1f1;*/
+      background-color: #ecf1f1;
+      background-image: url("../../images/front.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top left; }
     #main > section.four {
       background-color: #e8edec; }
+    #main > section .polaroidsGCSite {
+      width: 100%;
+      margin-top: 5%; }
 
 .iconSVG {
   width: 70px;
